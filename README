@@ -1,4 +1,8 @@
 NOTE: It doesn't look like the moons machines have a recent enough version of numpy to get the top 100 words part to complete, so I can demonstrate that for you if needed
+NOTE: Code expects data to be in a directory called 'data' at the same level you run my code from 
+--naiveBayesClassify.py
+--data
+  --(all the data files provided by the instructor)
 
 All code is found in naiveBayesClassify.py. Training and testing data is found in the 'data' directory
 
