@@ -85,7 +85,8 @@ def classify(beta, numberOfWordsInVocabulary, numberOfClasses, numberOfTestingEx
     #source of equation: http://www.time.mk/trajkovski/thesis/text-class.pdf (section 2.2)
     if printTop100InformationGainWords:
         informationGainVector = np.zeros((numberOfWordsInVocabulary))
-        #only loop over words that were encountered in training data (some words in vocabulary.txt didn't show up anywhere)
+        #only loop over words that were encountered in training data 
+        #(some words in vocabulary.txt didn't show up anywhere)
         for w in wordToDocumentCount.keys():
             sum = 0
         
@@ -109,7 +110,8 @@ def classify(beta, numberOfWordsInVocabulary, numberOfClasses, numberOfTestingEx
                 wordEntropyNegSum = wordEntropyNegSum + wordEntropyNeg
             
 
-            sum = -(classEntropySum) + probabilityADocumentContainsW * wordEntropyPosSum + (1.0-probabilityADocumentContainsW) * wordEntropyNegSum
+            sum = -(classEntropySum) + probabilityADocumentContainsW * wordEntropyPosSum + \
+                                       (1.0-probabilityADocumentContainsW) * wordEntropyNegSum
         
             informationGainVector[w] = sum
 
