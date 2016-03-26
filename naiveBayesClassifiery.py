@@ -1,6 +1,6 @@
 import numpy as np
 import math
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 np.set_printoptions(linewidth=200)
 
@@ -193,6 +193,8 @@ accuracyBeta1_0 = classify(1.0, sizeOfVocabulary,numberOfClasses,numberOfTesting
 
 classify(1.0/sizeOfVocabulary, sizeOfVocabulary,numberOfClasses,numberOfTestingSamples,numberOfTrainingSamples,True)
 
+#Uncomment to see plot, also uncomment the import above
+'''
 #Plot Accuracy vs. Beta
 plt.plot([0.00001,0.0001,0.001,0.01,0.1,1.0],[accuracyBeta0_00001,accuracyBeta0_0001,accuracyBeta0_001,accuracyBeta0_01,accuracyBeta0_1,accuracyBeta1_0],'ro')
 plt.margins(0.2, 0.2)
@@ -200,5 +202,5 @@ plt.xscale('log')
 plt.ylabel('Accuracy')
 plt.xlabel('Beta')
 plt.show()
-
+'''
 
