@@ -1,0 +1,13 @@
+All code is found in classify.py. Training and testing data is found in the 'data' directory
+
+Requires:
+  Python3
+  Numpy
+  Matplotlib
+
+To run:
+
+>python3 classify.py
+
+
+Accuracy and confusion matrix will be printed out for various values of beta. The top 100 words will be printed.  A plot of accuracy vs. beta will get displayed. 
